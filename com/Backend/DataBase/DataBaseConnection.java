@@ -5,13 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBaseConnection {
-    public Connection connection;
+    public static Connection connection;
 
-    private static final String URL = "dbc:mysql://localhost:3306/online_bidding_system";
+    private static final String URL = "dbc:mysql://localhost:3306/bidding_system";
     private  static final String USER = "root";
     private static final String PASSWORD = "1424";
 
-    public Connection getDBConnection() throws SQLException {
+    public static Connection getDBConnection() throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
