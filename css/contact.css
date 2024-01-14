@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+}
+
+#contact{
+    padding: 2vw;
+}
+
+#contact .contactingdiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2vw;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact .contactingdiv .all-info{
+    border: none;
+    padding: 2vw;
+    border-radius: 29px;
+    background-color: white;
+    box-shadow:  19px 19px 38px #9f9f9f,
+            -19px -19px 38px #ffffff;
+}
+
+#contact .contactingdiv .all-info:hover{
+    background-color: black;
+    color: white;
+}
+
+#contact .contactingdiv .information{
+    padding: 0.5vw;
+}
+#contact .contactingdiv .information h1,
+#contact .contactingdiv .send-message h2{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+#contact .contactingdiv .information p,
+#contact .contactingdiv .send-message p{
+    font-size: 1.25rem;
+    line-height: 1vw;
+    padding: 0.3vw;
+}
+
+#contact .contactingdiv .send-message{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contactingdiv .send-message input[name="name"],
+#contact .contactingdiv .send-message textarea{
+    padding: 0.2vw;
+    margin: 0.5vw;
+    border: 1px solid black;
+    overflow: scroll;
+    outline: invert;
+}
+
+#contact .contactingdiv .send-message textarea{
+    resize: none;
+    overflow: auto;
+    text-wrap: wrap;
+}
+
+#contact .contactingdiv .send-message button{
+    padding: 0.4vw;
+    margin: 0.5vw;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+#contact .contactingdiv .send-message button:hover{
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#login .login-container .loginfields select{
+    border-bottom: 1px solid brown;
+}
+
+#login .login-container .loginfields form{
+    padding: 1.5vw;
+}

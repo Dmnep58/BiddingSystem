@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#login .login-container .loginfields{
+    margin: 0.4vw;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    border-radius: 73px;
+    background: linear-gradient(315deg, #d4d1d1, #f0f0f0);
+    box-shadow:  -32px -32px 64px #9f9f9f,
+                32px 32px 64px #ffffff;
+}
+
+
+#login .login-container .loginfields .messsage-box{
+    text-align: center;
+}

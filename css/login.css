@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav .navigation-list .nav-names .loginPerson a{
+    padding: 0.3vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav .navigation-list .nav-names .loginPerson a:hover{
+    background-color: white;
+    color: black;
+}
+
+#login .login-container{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .login-container .loginfields{
+    margin: 5vw;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    border-radius: 73px;
+    background: linear-gradient(315deg, #d4d1d1, #f0f0f0);
+    box-shadow:  -32px -32px 64px #9f9f9f,
+                32px 32px 64px #ffffff;
+}
+
+#login .login-container .loginfields form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 4vw;
+}
+#login .login-container .loginfields form legend{
+    text-decoration: underline solid black 0.2rem;
+    text-underline-offset: 6px;
+    font-size: 2rem;    
+}
+#login .login-container .loginfields form > *{
+    padding: 0.5vw;
+    margin: 1vw;
+    border: none;
+}
+
+#login .login-container .loginfields form input{
+    border: none;
+    border-bottom: 1px solid brown;
+}
+
+#login .login-container .loginfields form .button button{
+    padding: 0.6vw;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+#login .login-container .loginfields form .button button:hover{
+    background-color: white;
+    color: black;
+}
+
+#login .login-container .loginfields form a{
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+}
+
+

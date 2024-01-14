@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<!-- navigation bar -->
+<nav>
+    <div class="navigation-list">
+        <div class="title">
+            <h4>NEPBID</h4>
+        </div>
+
+        <div class="nav-names">
+            <ul>
+                <li class="home"><a href="home.html">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contact"><a href="contact.html">contact</a></li>
+                <li class="categories">
+                    <select name="categoryselection" id="categoryselection">
+                        <option value="category">Categories</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="Bags">Bags</option>
+                        <option value="antique">Antique</option>
+                        <option value="Arts">Arts</option>
+                    </select>
+                </li>
+                <li class="loginPerson">
+                    <a href="#">Seller Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- main body section -->
+<section id="login">
+    <div class="login-container">
+        <div class="loginfields">
+            <form action="login" method="post">
+                <legend>User Login</legend>
+                <input type="number" name="id" placeholder="Enter Your id" required>
+                <input type="password" name="password" placeholder="Enter your Password" required>
+                <input type="hidden" name="action" value="bidder">
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+                <a href="#">Or, register as bidder</a>
+            </form>
+            <div class="error-message hidden" id="error-message"></div>
+        </div>
+    </div>
+</section>
+    
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.searcheditems{
+    margin: 0 2vw;
+    padding: 2vw;
+}
+
+.searcheditems .Searched-products{
+    margin: 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searcheditems .Searched-products .product-Data{
+    display: flex;
+    flex-direction: row;
+}
+
+.searcheditems .Searched-products .product-Data img{
+    mix-blend-mode: multiply;
+}
+
+.searcheditems .Searched-products .product-Data .product-desc{
+    margin-top: 1vw;
+}

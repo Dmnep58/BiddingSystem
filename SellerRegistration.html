@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/Register.css">
+    <link rel="stylesheet" href="./css/sellerRegistration.css">
+</head>
+<body>
+
+<!-- main body section -->
+<section id="login">
+    <div class="login-container">
+        <div class="loginfields">
+            <form action="transaction" method="post">
+                <legend>Signup as Seller</legend>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email"  name="email" id="email" placeholder="Enter Your Email" required>
+                <input type="number" name="contact" id="contact" placeholder="Enter your contact" required>
+                <select id="address" name="address">
+                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="Pokhara">Pokhara</option>
+                    <option value="Chitwan">Chitwan</option>
+                    <option value="Biratnagar">Biratnagar</option>
+                </select>
+                <input type="password" name="password" placeholder="Enter your Password" required>
+                <input type="hidden" name="action" value="bidder">
+                <div class="button">
+                    <button type="submit">Signup</button>
+                </div>
+                <a href="login.html">Go Back To Seller Login</a>
+            </form>
+            <div class="messsage-box" id="error-message">rewtw</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

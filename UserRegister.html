@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/Register.css">
+</head>
+<body>
+
+<!-- main body section -->
+<section id="login">
+    <div class="login-container">
+        <div class="loginfields">
+            <form action="RegBid" method="post">
+                <legend>Signup as Bidder</legend>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email"  name="email" id="email" placeholder="Enter Your Email" required>
+                <input type="number" name="contact" id="contact" placeholder="Enter your contact" required>
+                <input type="password" name="password" placeholder="Enter your Password" required>
+                <input type="hidden" name="action" value="bidder">
+                <div class="button">
+                    <button type="submit">Signup</button>
+                </div>
+                <a href="Userlogin.html">Go Back To User Login</a>
+            </form>
+            <div class="messsage-box" id="error-message"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

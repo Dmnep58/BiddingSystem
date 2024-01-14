@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* about section */
+
+#aboutSection{
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutSection .about-images{
+    text-align: center;
+    margin: 4vw;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#aboutSection .about-images img{
+    padding: 1vw;
+}
+
+
+#aboutSection .about-desc{
+    margin: 4vw;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+
+/* team section styling */
+#Team{
+    background-color: black;
+    color: white;
+}
+
+#Team .Teamtitle{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 1vw;
+}
+
+#Team .about-team{
+    padding: 2vw;
+}
+
+#Team .about-team .about-members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Team .about-team .about-each-members{
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 1vw;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    padding: 1px;
+}
+
+#Team .about-team .about-members .about-each-members img{
+width: 230px;
+height: 280px;
+}
+
+#Team .about-team .about-members .about-each-members:hover  .member-details{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#Team .about-team .about-members .about-each-members .profile-image{
+    cursor: pointer;
+}
+
+#Team .about-team .about-members .about-each-members .member-details{
+    margin-top: -65px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+/* brands collaborated with us */
+
+#Brands .Brands-title{
+    text-align: center;
+    margin: 1vw;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+#Brands .brands-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    margin: 2vw;
+}
+
+#Brands .brands-images img{
+    mix-blend-mode: multiply;
+}
+
+
+
+
+

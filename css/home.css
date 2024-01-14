@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navigation of the home page.. */
+nav .navigation-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: wheat;
+    padding: 1vw;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+nav .navigation-list .title{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav .navigation-list .nav-search{
+    flex:0.3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navigation-list .nav-search input{
+border: none;
+padding: 6px;
+width: 100%;
+margin-right: 10px;
+font-size: 1rem;
+}
+
+nav .navigation-list .nav-search .searchBtn{
+    padding: 5px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 30%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+nav .navigation-list .nav-search .searchBtn:hover{
+    color: black;
+    background-color: white;
+}
+
+
+nav .navigation-list .nav-names ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0.4vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navigation-list .nav-names ul li{
+    list-style: none;
+    padding: 0.3vw;
+}
+
+nav .navigation-list .nav-names ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+
+
+nav .navigation-list .nav-names ul li.categories #categoryselection{
+    padding: 5px;
+    color: wheat;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav .navigation-list .nav-names ul li.categories #categoryselection option{
+    background: black;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+
+
+/* main - landing */
+
+
+.main-landing{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-landing .imagebackground{
+    background: url(../images/interiorbanners.png);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.main-landing .image-slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+    align-items: flex-end;
+    overflow-x: auto;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.main-landing .image-slider img{
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    margin: 2vw;
+    border: 2px solid red;
+    align-items: end;
+    justify-content: end;
+}
+
+.main-landing .image-slider .image img{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+}
+
+
+/* Product */
+.products{
+    background-color:antiquewhite;
+}
+
+.products .product-Title h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    align-items: center;
+    margin:0 2vw 2vw;
+    padding: 2vw;
+    text-decoration: underline;
+}
+
+.products .products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    padding: 2vw;
+    margin: 1.5vw;
+    margin-bottom: 0;
+}
+
+.products .products-container .product-items{
+    border: 2px solid black;
+    margin: 2vw;
+    align-items: center;
+    text-align: center;
+    padding: 1vw;
+}
+
+.products .products-container .product-items .product-image img{
+    mix-blend-mode: multiply;
+}
+
+
+.products .products-container .product-items .product-Description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5vw;
+}
+
+.products .products-container .product-items .product-Description .productName,
+.products .products-container .product-items .product-Description .product-desc,
+.products .products-container .product-items .product-Description .product-price,
+.products .products-container .product-items .product-Description .product-bid{
+    padding: 3px;
+    font-weight: bolder;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    padding: 2vw;
+    color: white;
+}
+
+footer .about-company{
+    text-align: center;
+}
+
+footer .about-company h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+footer .about-company p{
+    margin: 1vw;
+    text-align: justify;
+}
+
+footer .shortcuts{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+footer .shortcuts a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+footer .contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer .contact input{
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+footer .contact button{
+    padding: 5px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 30%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    margin-left: 15px;
+}
+
+footer .contact button:hover{
+    background-color: white;
+    color: black;
+}
+
+.copyright{
+    text-align: center;
+    padding: 0.5vw;
+}
