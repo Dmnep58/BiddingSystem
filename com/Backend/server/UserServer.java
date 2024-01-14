@@ -5,18 +5,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/UserServer")
 public class UserServer extends HttpServlet {
     private  static final  long serialVersionUID = 1L;
-    private DaoI
+    private userInterfaceImplementation userInterface;
     @Override
     public void init() {
-
+        userInterface = new userInterfaceImplementation();
     }
 
     @Override
@@ -25,9 +23,13 @@ public class UserServer extends HttpServlet {
         response.addHeader("Access-Control-Allow-Methods","GET");
 
         PrintWriter outwriter = response.getWriter();
+        List<User>  userData = userInterface.getAllUserData();
 
-        String JSONResponseUserData =
+        Gson gson = new Gson();
+        String JSONResponseUserData = gson.toJSON(userData);
 
+        response.setContentType("application/json");
+        writer.append(JSONResponseUserData);
     }
 
 }
