@@ -1,0 +1,22 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\java\\java important jar files to maintain dependencies\\javax.servlet-api-4.0.1.jar",
+        "d:\\java\\java important jar files to maintain dependencies\\gson-2.8.2.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "root",
+            "database": "bidding_system",
+            "username": "root"
+        }
+    ]
+}
