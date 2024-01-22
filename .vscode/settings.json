@@ -18,5 +18,8 @@
             "database": "bidding_system",
             "username": "root"
         }
+    ],
+    "cSpell.words": [
+        "Gson"
     ]
 }

@@ -30,6 +30,7 @@ public class ProductData {
                 product.setProductId(result.getLong("productId"));
                 product.setProductName(result.getString("productName"));
                 product.setProductDescription(result.getString("productDescription"));
+                product.setProductCategory(result.getString("productCategory"));
                 product.setProductAmount(result.getLong("ProductAmount"));
                 product.setProductSellerId(result.getLong("productSellerId"));
                 product.setProductImg(result.getString("productImg"));

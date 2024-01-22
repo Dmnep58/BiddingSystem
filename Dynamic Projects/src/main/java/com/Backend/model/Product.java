@@ -1,5 +1,4 @@
 package com.Backend.model;
-
 public class Product {
     private Long productId;
     private String productName;
@@ -7,6 +6,7 @@ public class Product {
     private Long productAmount;
     private Long productSellerId;
     private String productImg;
+    private String productCategory;
 
     
     public Long getProductId() {
@@ -65,6 +65,15 @@ public class Product {
 
     public void setProductImg(String productImg) {
         this.productImg = productImg;
+    }
+
+
+    public String getProductCategory() {
+        return productCategory;
+    }
+
+    public void setProductCategory(String productCategory) {
+        this.productCategory = productCategory;
     }
 
 }

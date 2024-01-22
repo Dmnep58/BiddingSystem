@@ -8,7 +8,7 @@ xhr.onreadystatechange = function () {
 
     if (xhr.readyState === 4) {
         const productData = JSON.parse(this.responseText); // 'this' references to xhr (current context)
-        console.log(productData)
+        // console.log(productData)
     productData.forEach(data => {
         let containerDiv = document.createElement('div');
         containerDiv.className = 'product-items';

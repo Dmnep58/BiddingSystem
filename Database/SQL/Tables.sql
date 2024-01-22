@@ -16,7 +16,7 @@ create table seller(sellerId bigint not null, sellerName varchar(20) not null,Fu
 
 
 -- creating a product table
-create table product( productId bigint not null primary key, productName varchar(50) not null, productDescription varchar(90) not null, ProductAmount bigint not null, productSellerId bigint not null,
+create table product( productId bigint not null primary key, productName varchar(50) not null, productDescription varchar(90) not null,productCategory varchar(20) not null, ProductAmount bigint not null, productSellerId bigint not null,
 productImg varchar(50) not null, foreign key(productSellerId) references seller(sellerId) on delete cascade);
 
 

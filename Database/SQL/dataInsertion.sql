@@ -9,5 +9,5 @@
 
 
 ---- insert row in product table
-        insert into product values(20001,'Adidas Stan Smith Golf Shoes Limited Edition','Adidas Stan Smith Golf Shoes Limited Edition for general people',12000,10021,'Adidas Stan Smith Golf Shoes Limited Edition.png');
-        insert into product values(20002,'best antique and vintage chair 1','best antique and vintage chair 1 for general people',1201,10022,'best antique and vintage chair 1.png');
+        insert into product values(20001,'Adidas Stan Smith Golf Shoes Limited Edition','Adidas Stan Smith Golf Shoes Limited Edition for general people','Shoes',12000,10021,'Adidas Stan Smith Golf Shoes Limited Edition.png');
+        insert into product values(20002,'best antique and vintage chair 1','best antique and vintage chair 1 for general people','Antique',1201,10022,'best antique and vintage chair 1.png');
