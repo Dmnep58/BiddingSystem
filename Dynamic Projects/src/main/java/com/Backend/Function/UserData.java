@@ -3,6 +3,7 @@ package com.Backend.Function;
 import com.Backend.DataBase.DataBaseConnection;
 import com.Backend.model.User;
 
+import java.lang.invoke.StringConcatFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -53,8 +54,9 @@ public class UserData {
         return userDataExtract;
     }
 
+    
     // Insert the user data into the database.
-    public static boolean fetchAllUserData(List<User> userDataInsertion){
+    public static boolean InsertAllUserData(List<User> userDataInsertion){
         boolean isUserDataInserted = true;
        // List<User> userAllData = new ArrayList<>();
         String query = "INSET INTO users values( ? , ? , ? , ? , ? , ? , ?)";
@@ -71,8 +73,55 @@ public class UserData {
         catch (SQLException e){
             e.printStackTrace();
         }
+        finally {
+			try {
+				if(connection != null) connection.close();
+                if (preparedStatement!=null) preparedStatement.close();
+                
+			} catch (SQLException e2) {
+				// TODO: handle exception
+			}
+		}
 
         return isUserDataInserted;
     }
+    
+    
+    
+    // check user Validity.
+    
+    public static boolean isValidUser(long userid, String userpassword) {
+    	boolean isvalid = false;
+    	String query = "select * from users where userId = ? and password = ?";
+    	try
+        {
+            connection = DataBaseConnection.getDBConnection();
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setLong(1, userid);
+            preparedStatement.setString(2, userpassword);
+            
+            ResultSet resultSet = preparedStatement.executeQuery();
+            
+            while(resultSet.next()) {
+            	isvalid = true;
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        finally {
+			try {
+				if(connection != null) connection.close();
+                if (preparedStatement!=null) preparedStatement.close();
+                
+			} catch (SQLException e2) {
+				// TODO: handle exception
+			}
+		}
+    	
+    	return isvalid;
+    }
+    
+    
     
 }

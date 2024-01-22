@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>BiddingSystem</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>home.html</welcome-file>
   </welcome-file-list>
 
   <servlet>
@@ -23,5 +23,16 @@
   <servlet-mapping>
     <servlet-name>UserServer</servlet-name>
     <url-pattern>/userData</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Backend.server.Login</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/users</url-pattern>
   </servlet-mapping>
 </web-app>

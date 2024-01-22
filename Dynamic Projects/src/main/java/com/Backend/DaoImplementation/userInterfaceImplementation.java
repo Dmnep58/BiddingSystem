@@ -11,5 +11,10 @@ public class userInterfaceImplementation implements userDataInterface {
     public List<User> getAllUserData() {
         return UserData.fetchAllUserData();
     }
+
+	@Override
+	public boolean isvalidUser(long userid, String userpassword) {
+		return UserData.isValidUser(userid,userpassword);
+	}
     
 }

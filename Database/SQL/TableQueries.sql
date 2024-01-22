@@ -7,6 +7,9 @@
         -- drop table
             drop table users;
 
+        -- fetch user id and password
+            select * from users where userId = ? and password = ?;
+
 
 
 -- ------------seller Table Queries----------

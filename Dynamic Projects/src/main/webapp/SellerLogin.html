@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Seller Login</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
@@ -18,8 +18,8 @@
         <div class="nav-names">
             <ul>
                 <li class="home"><a href="home.html">Home</a></li>
-                <li class="about"><a href="about.html">About</a></li>
-                <li class="contact"><a href="contact.html">contact</a></li>
+                <li class="about"><a href="About.html">About</a></li>
+                <li class="contact"><a href="contactus.html">contact</a></li>
                 <li class="categories">
                     <select name="categoryselection" id="categoryselection">
                         <option value="category">Categories</option>
@@ -31,7 +31,7 @@
                     </select>
                 </li>
                 <li class="loginPerson">
-                    <a href="#">Seller Login</a>
+                    <a href="UserLogin.html">Bidder Login</a>
                 </li>
             </ul>
         </div>
@@ -43,22 +43,21 @@
     <div class="login-container">
         <div class="loginfields">
             <form action="login" method="post">
-                <legend>User Login</legend>
+                <legend>Seller Login</legend>
                 <input type="number" name="id" placeholder="Enter Your id" required>
                 <input type="password" name="password" placeholder="Enter your Password" required>
-                <input type="hidden" name="action" value="bidder">
+                <input type="hidden" name="action" value="seller">
                 <div class="button">
                     <button type="submit">Login</button>
                 </div>
-                <a href="#">Or, register as bidder</a>
+                <a href="SellerRegistration.html">Or, register as Seller</a>
             </form>
             <div class="error-message hidden" id="error-message"></div>
         </div>
     </div>
 </section>
     
-
-
-<script src="./js/index.js"></script>
+    
+    <script src="./js/home.js"></script>
 </body>
 </html>
