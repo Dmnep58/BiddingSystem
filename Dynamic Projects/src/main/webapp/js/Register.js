@@ -10,7 +10,13 @@ fetch("http://localhost:8080/BiddingSystem/users")
     })
     .then((data) => {
         // Handle the data received from the server
-        console.log(data);
+        if(data){
+
+        }
+        else{
+            
+            document.querySelector('#error-message').textContent = "Failed to log In"
+        }
     })
     .catch((error) => console.error('Error:', error));
 

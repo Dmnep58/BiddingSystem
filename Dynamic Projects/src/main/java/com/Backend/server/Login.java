@@ -39,6 +39,8 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("Password");
 		String action = request.getParameter("role");
 		
+		System.out.println(action);
+		
 		boolean loggedIn = false;
 		
 		switch (action) {
@@ -58,7 +60,7 @@ public class Login extends HttpServlet {
 		
 		PrintWriter writer = response.getWriter();
 		Gson gon = new Gson();
-        String JSONResponseUserData = gon.toJson(loggedIn + "looged in");
+        String JSONResponseUserData = gon.toJson(loggedIn);
 
         response.setContentType("application/json");
         writer.append(JSONResponseUserData);
